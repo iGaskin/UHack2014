@@ -16,6 +16,10 @@ userDict = {
                     'names': '',
                     'description':   '',
                     'template-type': 'knowledge'
+                    'recipient_email': 'travisvuong@hotmail.com'
+                    'badge_template_id': 'c2d4fb9a-1769-47c3-9391-110092758f08'
+                    'issued_to_first_name': 'Travis'
+                    'issued_to_last_name': 'Vuong'
                    }]
 }
 """
