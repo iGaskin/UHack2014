@@ -1,0 +1,7 @@
+How to add badges
+    > Profile->Template Management->
+
+How to convert pdf to html
+    > Requires: https://pypi.python.org/pypi/pdfminer/
+    > %pdf2txt.py -o <filename>.html <filename>.pdf
+
