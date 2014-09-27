@@ -1,7 +1,7 @@
 import json
 import pprint
 import re
-fname = "../APAS/apas.html"
+fname = "../APAS/Travis_APAS.html"
 
 
 p = re.compile(r'^CSCI[0-9]{4}')
@@ -24,6 +24,7 @@ idLine   = 7
 nameLine = 8 
 #counterCourse = 0
 descriptDict = {
+                'CSCI1103': 'Java Programming MN West', 
                 'CSCI1901': 'Computer Programming I',
                 'CSCI1902': 'Computer Programming 2',
                 'CSCI2011': 'Discrete Structures of Computer Science',
@@ -91,8 +92,10 @@ for lineNumber, line in enumerate(f):
                 courseDescription = descriptDict[courseName]
                 userDict[courseName]['name'] = courseName
                 userDict[courseName]['description'] = courseDescription 
-                userDict[courseName]['template-type'] = 'knowledge'
+                userDict[courseName]['template_type'] = 'knowledge'
                 
 
 print(json.dumps(userDict, sort_keys=False, indent=4))
 #studentInfo.json
+with open('userDict.json', 'w') as outfile:
+    json.dump(userDict, outfile)

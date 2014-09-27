@@ -50,4 +50,6 @@ def pdf_to_csv(filename):
 
     return outfp.getvalue()
 
-pdf_to_csv('../ipas.pdf')
+filename = '../Travis\ apas.pdf'
+
+pdf_to_csv(filename)
