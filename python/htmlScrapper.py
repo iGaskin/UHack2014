@@ -1,6 +1,6 @@
 import json
 import pprint
-import from courseDict *
+from courseDict import descriptDict
 import re
 fname = "../APAS/Travis_APAS.html"
 
