@@ -1,11 +1,11 @@
-#!/usr/bin/python 
+#!/usr/bin/python2.7
 import cgi 
 import cgitb; cgitb.enable() 
 import os, sys, time, datetime
 import webbrowser 
 
 index = 0 
-UPLOAD_DIR_NAME = "APAS" 
+UPLOAD_DIR_NAME = "../APAS" 
 UPLOAD_DIR_PATH = os.getcwd() + '/' + UPLOAD_DIR_NAME
 HTML_TEMPLATE = """<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 
 Transitional//EN"> 
